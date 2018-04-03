@@ -18,7 +18,15 @@ header {
 }
 
 .bg-dark {
-    background-color: #343a40!important;
+    background-color: #343a40;
+}
+
+.navbar {
+    min-height: 55px;
+}
+
+.screen-width {
+    padding: 10px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
@@ -37,4 +45,58 @@ img {
 
 button {
     cursor: pointer;
+}
+
+#top-news-title {
+    text-align: center;
+    padding: 10px;
+}
+
+#top-news-description {
+    padding: 10px;
+    text-indent: 25px;
+}
+
+#top-news-link {
+    padding: 10px;
+}
+
+@media (max-width: 540px) {
+    .bg-dark {
+        background-color: red;
+    }
+
+    .screen-width {
+        width: 100%;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+    .bg-dark {
+        background-color: #343a40;
+    }
+
+    .screen-width {
+        width: 50%;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1140px){
+    .bg-dark {
+        background-color: blue;
+    }
+
+    .screen-width {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1140px){
+    .bg-dark {
+        background-color: grey;
+    }
+
+    .screen-width {
+        width: 20%;
+    }
 }
